@@ -1,213 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet" href ="style.css">
-</head>
-<body>
-    <nav class="header">  
-    <div class="header1">
-        <img src = "images/blinkit_logo.webp" alt= "blinkit logo" class="logo">
-
-        <form class="dropdown-location">
-            <label for="location"class="time"><b>Delivery in 10 minutes</b></label>
-            <select name="location" id="location">
-              <option value="delhi">Delhi</option>
-              <option value="mumbai">Mumbai</option>
-              <option value="bangalore">Bangalore</option>
-              <option value="gudgaon">Gurugaon</option>
-            </select>
-          </form>
-        </div>
-        <div class="header2">
-            <button class="loginbutton">Login</button>
-          <button class="addtocart">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Blinkit UI</title>
+      <link rel = "stylesheet" href ="style.css">
+   </head>
+   <body>
+      <header class="flex">
+         <div class="header-logo flex">
+            <img src = "images/blinkit_logo.webp" alt= "blinkit logo" class="logo">
+               <div>
+                <p class="location">
+                    <b>Delivery in 10 minutes</b>
+                </p>
+                <p class="location">Delhi</p>
+            </div>
+         </div>
+         <div class="header-login-butn flex">
+            <button class="login-btn">Login</button>
+            <button class="add-to-cart flex">
             <img src="images/shopping_cart.ico">
-            <b>My cart</b></button> 
-        </div>
-
-    </nav>   
-    
-    <nav class="navbar">
-<a href="/vegetables_fruits/" class="bar">Vegetables & Fruits</a>
-<a href="/dairy_breakfast/" class="bar">Dairy & Breakfast</a>
-<a href="/munchies/" class="bar">Munchies</a>
-<a href="/cold_drinks_juices/" class="bar">Cold Drinks & Juices</a>
-<a href="/instant_frozen_food/" class="bar">Instant & Frozen Food</a>
-<a href="/tea_coffee_health_drink/" class="bar">Tea, Coffee & Health Drinks</a>
-<a href="/bakery_biscuits/" class="bar">Bakery & Biscuits</a>
-<a href="/more/" class="bar">More</a>
-    </nav>
-
-    <div class="mainmenu">
-        <ul class="sidebar">
-            <li class="sidebarlist">
-                <img src="images/potato-png-32.png" alt="All" class="foodimage">
-                <h5 class= "listtext">All</h3></li>
-            <li class="sidebarlist">
-                <img src="images/potato-png-32.png" alt="Fresh Vegetables" class="foodimage">
-                <h5 class= "listtext">Fresh Vegetables</h5></li>
-            <li class="sidebarlist">
-                <img src="images/fruits.avif" alt="Fresh Fruits" class="foodimage">
-                <h5 class= "listtext">Fresh Fruits</h5></li>
-            <li class="sidebarlist">
-                <img src="./images/exotics.avif" alt="Exotics" class="foodimage"> 
-                <h5 class= "listtext">Exotics</h5></li>
-            <li class="sidebarlist">
-                <img src="./images/seasonal.avif" alt="Seasonal" class="foodimage">
-                <h5 class= "listtext"> Seasonal</h5></li>
-            <li class="sidebarlist">
-                <img src="images/organic.avif" alt="Organic & Hydroponic" class="foodimage"> 
-                <h5 class= "listtext">Organic & Hydroponic</h5></li>
-            <li class="sidebarlist">
-                <img src="images/sprouts.avif" alt="Freshly Cut & sprouts" class="foodimage"> 
-                <h5 class= "listtext">Freshly Cut & sprouts</h5></li>
-        </ul>
-    <div class="menu">
-        <div class = "productdisc">
-            <h3 class="title">Buy Fresh Vegetables Online</h3>
-            <form class="sort">
-                <h5><b>Sort By</b></h5>
-                <select name="sortbyfilter" id="sortbyfilter">
-                  <option value="Relevance">Relevance</option>
-                  <option value="Price">Price</option>
-                  <option value="Popularity">Popularity</option>
-                </select>
-              </form>
-        </div>
-        <div class="card">
-            <div class="row">
-        <article class="product">
-            <div class="discount-btn"><p class="discount">10% OFF</p></div>
-            <div class="productimage"><img src="images/potato-png-32.png" alt = "New Potato (Aloo)" class="productimg"></div>
-            <div class="source-btn"><p class="source">Sourced at 5AM</p></div>
-            <div class="product-title"><h3 class="producttitle">New Potato (Aloo)</h3></div>
-            <div class="weight-style"><p class="weight">1kg</p></div>
-             <div class="cart-grid">
-             <p><span class="final-price">₹15</span><br>
-                 <span class="cutprice"><s>₹17</s></span>
-             </p>
-              <div class="cart-btn">
-                <button class="cart">ADD</button>
+            <strong>My Cart</strong></button> 
+         </div>
+        </header>
+      <nav class="nav-bar flex">
+         <a href="/vegetables_fruits/" class="bar">Vegetables & Fruits</a>
+         <a href="/dairy_breakfast/" class="bar">Dairy & Breakfast</a>
+         <a href="/munchies/" class="bar">Munchies</a>
+         <a href="/cold_drinks_juices/" class="bar">Cold Drinks & Juices</a>
+         <a href="/instant_frozen_food/" class="bar">Instant & Frozen Food</a>
+         <a href="/tea_coffee_health_drink/" class="bar">Tea, Coffee & Health Drinks</a>
+         <a href="/bakery_biscuits/" class="bar">Bakery & Biscuits</a>
+         <a href="/more/" class="bar">More</a>
+      </nav>
+      <main class="flex">
+         <ul class="side-bar">
+            <li class="side-bar-list flex">
+               <img src="images/potato-png-32.png" alt="All" class="food-image">
+               <p>
+               All</p>
+            </li>
+            <li class="side-bar-list flex">
+               <img src="images/potato-png-32.png" alt="Fresh Vegetables" class="food-image">
+               <p>Fresh Vegetables</p>
+            </li>
+            <li class="side-bar-list flex">
+               <img src="images/fruits.avif" alt="Fresh Fruits" class="food-image">
+               <p>Fresh Fruits</p>
+            </li>
+            <li class="side-bar-list flex">
+               <img src="./images/exotics.avif" alt="Exotics" class="food-image"> 
+               <p>Exotics</p>
+            </li>
+            <li class="side-bar-list flex">
+               <img src="./images/seasonal.avif" alt="Seasonal" class="food-image">
+               <p> Seasonal</p>
+            </li>
+            <li class="side-bar-list flex">
+               <img src="images/organic.avif" alt="Organic & Hydroponic" class="food-image"> 
+               <p>Organic & Hydroponic</p>
+            </li>
+            <li class="side-bar-list flex">
+               <img src="images/sprouts.avif" alt="Freshly Cut & sprouts" class="food-image"> 
+               <p>Freshly Cut & sprouts</p>
+            </li>
+         </ul>
+         <div class="menu">
+            <div class = "product-desc flex">
+               <p class="title">Buy Fresh Vegetables Online</p>
+               <form class="sort flex">
+                  <p><b>Sort By</b></p>
+                  <select name="sort-by-filter" id="sort-by-filter">
+                     <option value="Relevance">Relevance</option>
+                     <option value="Price">Price</option>
+                     <option value="Popularity">Popularity</option>
+                  </select>
+               </form>
             </div>
-           </div>
-        </article>
-        <article class="product">
-            <div class="discount-btn"><p class="discount">15% OFF</p></div>
-            <div class="productimage"><img src="images/onion.avif" alt = "Onion (Pyaaz)" class="productimg"></div>
-            <div class="source-btn"><p class="source">Sourced at 5AM</p></div>
-            <div class="product-title"><h3 class="producttitle">Onion</h3></div>
-            <div class="weight-style"><p class="weight">1kg</p></div>
-             <div class="cart-grid">
-             <p><span class="final-price">₹32</span><br>
-                 <span class="cutprice"><s>₹38</s></span>
-             </p>
-              <div class="cart-btn">
-                <button class="cart">ADD</button>
+            <div class="card">
+               <div class="row flex">
+                  <section class="product">
+                     <div class="discount">
+                        <p class="flex">10% OFF</p>
+                     </div>
+                     <div class="product-image-container"><img src="images/potato-png-32.png" alt = "New Potato (Aloo)"></div>
+                     <div class="source-btn">
+                        <p class="source">Sourced at 5AM</p>
+                     </div>
+                     <div class="product-title">
+                        <p>New Potato (Aloo)</p>
+                     </div>
+                     <div class="weight-style flex">
+                        <p class="weight">1kg</p>
+                     </div>
+                     <div class="cart-grid flex">
+                        <p><span class="final-price">₹15</span><br>
+                           <span class="cut-price"><s>₹17</s></span>
+                        </p>
+                        <div class="cart-btn-container flex">
+                           <button>ADD</button>
+                        </div>
+                     </div>
+                  </section>
+                  <section class="product">
+                     <div class="discount">
+                        <p class="flex">15% OFF</p>
+                     </div>
+                     <div class="product-image-container"><img src="images/onion.avif" alt = "Onion (Pyaaz)"></div>
+                     <div class="source-btn">
+                        <p class="source">Sourced at 5AM</p>
+                     </div>
+                     <div class="product-title">
+                        <p>Onion</p>
+                     </div>
+                     <div class="weight-style flex">
+                        <p class="weight">1kg</p>
+                     </div>
+                     <div class="cart-grid flex">
+                        <p><span class="final-price">₹32</span><br>
+                           <span class="cut-price"><s>₹38</s></span>
+                        </p>
+                        <div class="cart-btn-container flex">
+                           <button>ADD</button>
+                        </div>
+                     </div>
+                  </section>
+                  <section class="product">
+                     <div class="discount">
+                        <p class="flex">12% OFF</p>
+                     </div>
+                     <div class="product-image-container"><img src="images/carrot.avif" alt = "Carrot"></div>
+                     <div class="source-btn">
+                        <p class="source">Sourced at 5AM</p>
+                     </div>
+                     <div class="product-title">
+                        <p>Carrot</p>
+                     </div>
+                     <div class="weight-style flex">
+                        <p class="weight">500g</p>
+                     </div>
+                     <div class="cart-grid flex">
+                        <p><span class="final-price">₹40</span><br>
+                           <span class="cut-price"><s>₹45</s></span>
+                        </p>
+                        <div class="cart-btn-container flex">
+                           <button>ADD</button>
+                        </div>
+                     </div>
+                  </section>
+                  <section class="product">
+                     <div class="discount">
+                        <p class="flex">16% OFF</p>
+                     </div>
+                     <div class="product-image-container"><img src="images/capsicum.avif" alt = "Capsicum"></div>
+                     <div class="source-btn">
+                        <p class="source">Sourced at 5AM</p>
+                     </div>
+                     <div class="product-title">
+                        <p>Capsicum</p>
+                     </div>
+                     <div class="weight-style flex">
+                        <p class="weight">500g</p>
+                     </div>
+                     <div class="cart-grid flex">
+                        <p><span class="final-price">₹26</span><br>
+                           <span class="cut-price"><s>₹32</s></span>
+                        </p>
+                        <div class="cart-btn-container flex">
+                           <button>ADD</button>
+                        </div>
+                     </div>
+                  </section>
+               </div>
+               <div class="row flex">
+                  <section class="product">
+                     <div class="discount">
+                        <p class="flex">8% OFF</p>
+                     </div>
+                     <div class="product-image-container"><img src="images/okra.avif" alt = "Okra"></div>
+                     <div class="source-btn">
+                        <p class="source">Sourced at 5AM</p>
+                     </div>
+                     <div class="product-title">
+                        <p>Okra</p>
+                     </div>
+                     <div class="weight-style flex">
+                        <p class="weight">750g</p>
+                     </div>
+                     <div class="cart-grid flex">
+                        <p><span class="final-price">₹45</span><br>
+                           <span class="cut-price"><s>₹52</s></span>
+                        </p>
+                        <div class="cart-btn-container flex">
+                           <button>ADD</button>
+                        </div>
+                     </div>
+                  </section>
+                  <section class="product">
+                     <div class="discount">
+                        <p class="flex">10% OFF</p>
+                     </div>
+                     <div class="product-image-container"><img src="images/tomato.avif" alt = "tomato"></div>
+                     <div class="source-btn">
+                        <p class="source">Sourced at 5AM</p>
+                     </div>
+                     <div class="product-title">
+                        <p>Tomato</p>
+                     </div>
+                     <div class="weight-style flex">
+                        <p class="weight">1kg</p>
+                     </div>
+                     <div class="cart-grid flex">
+                        <p><span class="final-price">₹30</span><br>
+                           <span class="cut-price"><s>₹33</s></span>
+                        </p>
+                        <div class="cart-btn-container flex">
+                           <button>ADD</button>
+                        </div>
+                     </div>
+                  </section>
+                  <section class="product">
+                     <div class="discount">
+                        <p class="flex">15% OFF</p>
+                     </div>
+                     <div class="product-image-container"><img src="images/ginger.avif" alt = "Ginger"></div>
+                     <div class="source-btn">
+                        <p class="source">Sourced at 5AM</p>
+                     </div>
+                     <div class="product-title">
+                        <p>Ginger</p>
+                     </div>
+                     <div class="weight-style flex">
+                        <p class="weight">1kg</p>
+                     </div>
+                     <div class="cart-grid flex">
+                        <p><span class="final-price">₹22</span><br>
+                           <span class="cut-price"><s>₹28</s></span>
+                        </p>
+                        <div class="cart-btn-container flex">
+                           <button>ADD</button>
+                        </div>
+                     </div>
+                  </section>
+                  <section class="product">
+                     <div class="discount">
+                        <p class="flex">20% OFF</p>
+                     </div>
+                     <div class="product-image-container"><img src="images/brinjal.jpg" alt = "brinjal"></div>
+                     <div class="source-btn">
+                        <p class="source">Sourced at 5AM</p>
+                     </div>
+                     <div class="product-title">
+                        <p>Brinjal</p>
+                     </div>
+                     <div class="weight-style flex">
+                        <p class="weight">1kg</p>
+                     </div>
+                     <div class="cart-grid flex">
+                        <p><span class="final-price">₹34</span><br>
+                           <span class="cut-price"><s>₹42</s></span>
+                        </p>
+                        <div class="cart-btn-container flex">
+                           <button>ADD</button>
+                        </div>
+                     </div>
+                  </section>
+               </div>
             </div>
-           </div>
-        </article>
-        <article class="product">
-            <div class="discount-btn"><p class="discount">12% OFF</p></div>
-            <div class="productimage"><img src="images/carrot.avif" alt = "Carrot" class="productimg"></div>
-            <div class="source-btn"><p class="source">Sourced at 5AM</p></div>
-            <div class="product-title"><h3 class="producttitle">Carrot</h3></div>
-            <div class="weight-style"><p class="weight">500g</p></div>
-             <div class="cart-grid">
-             <p><span class="final-price">₹40</span><br>
-                 <span class="cutprice"><s>₹45</s></span>
-             </p>
-              <div class="cart-btn">
-                <button class="cart">ADD</button>
-            </div>
-           </div>
-        </article>
-        <article class="product">
-            <div class="discount-btn"><p class="discount">16% OFF</p></div>
-            <div class="productimage"><img src="images/capsicum.avif" alt = "Capsicum" class="productimg"></div>
-            <div class="source-btn"><p class="source">Sourced at 5AM</p></div>
-            <div class="product-title"><h3 class="producttitle">Capsicum</h3></div>
-            <div class="weight-style"><p class="weight">500g</p></div>
-             <div class="cart-grid">
-             <p><span class="final-price">₹26</span><br>
-                 <span class="cutprice"><s>₹32</s></span>
-             </p>
-              <div class="cart-btn">
-                <button class="cart">ADD</button>
-            </div>
-           </div>
-        </article>
-    </div>
-
-    <div class="row">
-        <article class="product">
-            <div class="discount-btn"><p class="discount">8% OFF</p></div>
-            <div class="productimage"><img src="images/okra.avif" alt = "Okra" class="productimg"></div>
-            <div class="source-btn"><p class="source">Sourced at 5AM</p></div>
-            <div class="product-title"><h3 class="producttitle">Okra</h3></div>
-            <div class="weight-style"><p class="weight">750g</p></div>
-             <div class="cart-grid">
-             <p><span class="final-price">₹45</span><br>
-                 <span class="cutprice"><s>₹52</s></span>
-             </p>
-              <div class="cart-btn">
-                <button class="cart">ADD</button>
-            </div>
-           </div>
-        </article>
-        <article class="product">
-            <div class="discount-btn"><p class="discount">10% OFF</p></div>
-            <div class="productimage"><img src="images/tomato.avif" alt = "tomato" class="productimg"></div>
-            <div class="source-btn"><p class="source">Sourced at 5AM</p></div>
-            <div class="product-title"><h3 class="producttitle">Tomato</h3></div>
-            <div class="weight-style"><p class="weight">1kg</p></div>
-             <div class="cart-grid">
-             <p><span class="final-price">₹30</span><br>
-                 <span class="cutprice"><s>₹33</s></span>
-             </p>
-              <div class="cart-btn">
-                <button class="cart">ADD</button>
-            </div>
-           </div>
-        </article>
-        <article class="product">
-            <div class="discount-btn"><p class="discount">15% OFF</p></div>
-            <div class="productimage"><img src="images/ginger.avif" alt = "Ginger" class="productimg"></div>
-            <div class="source-btn"><p class="source">Sourced at 5AM</p></div>
-            <div class="product-title"><h3 class="producttitle">Ginger</h3></div>
-            <div class="weight-style"><p class="weight">1kg</p></div>
-             <div class="cart-grid">
-             <p><span class="final-price">₹22</span><br>
-                 <span class="cutprice"><s>₹28</s></span>
-             </p>
-              <div class="cart-btn">
-                <button class="cart">ADD</button>
-            </div>
-           </div>
-        </article>
-        <article class="product">
-            <div class="discount-btn"><p class="discount">20% OFF</p></div>
-            <div class="productimage"><img src="images/brinjal.jpg" alt = "brinjal" class="productimg"></div>
-            <div class="source-btn"><p class="source">Sourced at 5AM</p></div>
-            <div class="product-title"><h3 class="producttitle">Brinjal</h3></div>
-            <div class="weight-style"><p class="weight">1kg</p></div>
-             <div class="cart-grid">
-             <p><span class="final-price">₹34</span><br>
-                 <span class="cutprice"><s>₹42</s></span>
-             </p>
-              <div class="cart-btn">
-                <button class="cart">ADD</button>
-            </div>
-           </div>
-        </article>
-    </div>
-
-    </div>
-    </div>
-    </div>
-
-</body>
+         </div>
+        </main>
+   </body>
 </html>
