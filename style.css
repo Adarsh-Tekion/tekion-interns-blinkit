@@ -10,8 +10,6 @@ body{
     color:white;
     border-radius: 10px;
     float:right;
-    align-items: center;
-    justify-content: center;
     gap: 5px;
     }
     .login-btn{
@@ -36,11 +34,9 @@ body{
     border-bottom:3px solid rgb(250, 248, 248)
     }
     .header-logo{
-    align-items: center;
     gap: 30px;
     }
     .header-login-butn{
-    align-items: center;
     padding-right: 10px;
     justify-content: space-between;
     }
@@ -48,7 +44,6 @@ body{
     flex-direction: row;
     text-align: center;
     border: 2px solid rgb(250, 248, 248);
-    justify-content: center;
     }
     .bar{
     padding-right:20px;
@@ -80,7 +75,6 @@ body{
     .food-image{
     width: 50px;
     height: 50px;
-    justify-content: center;
     padding-top: 10px;
     padding-left: 10px;
     }
@@ -105,7 +99,6 @@ body{
     }
     .sort{
     flex-direction: row;
-    align-items: center;
     gap: 10px;
     }
     #sort-by-filter{
@@ -133,7 +126,6 @@ body{
     border-radius: 5px 5px 5px 5px;
     background-color: rgb(41, 135, 212);
     color: white;
-    justify-content: center;
     }
     .source-btn{
     display:flex;
@@ -147,17 +139,14 @@ body{
     color: green;
     display:flex;
     align-self: right;
-    justify-content: center;
     }
     .product-image-container{
     display:flex;
-    justify-content: center;
     height: 30%;
     }
     .product-image-container img{
     width: 50%;
     height: 80%;
-    align-items: center;
     }
     .product-title p{
     font-weight:  bold;
@@ -193,9 +182,42 @@ body{
     flex-direction: row;
     justify-content: space-between;
     }
-    .cart-btn-container{
-    align-items: center;
-    }
     .flex{
     display: flex;
+    }
+    .justify-center{
+    justify-content: center;
+    }
+    .align-center{
+    align-items: center;
+    }
+    footer{
+    margin-top: 25px;
+    border: 2px solid rgb(250, 248, 248);
+    background-color: rgb(250, 248, 248);
+    }
+    .footer-store-img img {  
+    width: 35%;  
+    height: 50%;
+    }
+    .footer-store-img{
+    gap: 1rem;
+    width:40%;
+    margin: 0;
+    padding: 0;
+    }
+    .footer-download-source{
+    justify-content: flex-end;
+    margin: 0;
+    }
+    .download-text{
+    margin-right: 0;
+    padding-right: 0;
+    }
+    .footer-social-media {  
+    gap: 1rem;
+    }
+    .footer-social-media img { 
+    width: 5%;  
+    height: 20%;
     }
