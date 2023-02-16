@@ -61,6 +61,9 @@
     .side-bar{
     margin-top: 0;
     }
+    #categories_items{
+    margin-top: 0;
+    }
     .side-bar-list{
     list-style-type: none;
     width: 250px;
@@ -91,8 +94,18 @@
     }
     .menu{
     display: inline-block;
-    width: 75%;
+    width: 100%;
+    border: rgb(250, 248, 248);
+    }
+    .row-card{
+    display: flex;
+    flex-direction: row;
+    }
+    #card_items{
+    display: flex;
+    flex-direction:column;
     border: 3px solid rgb(250, 248, 248);
+    width: 100%;
     }
     .product-desc{
     justify-content: space-between;
@@ -183,6 +196,17 @@
     .cart-grid{
     flex-direction: row;
     justify-content: space-between;
+    }
+    .price{
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    .final-price{
+    margin-bottom:0;
+    }
+    .cut-price{
+    margin-top:0;
+    text-decoration: line-through;
     }
     .flex{
     display: flex;
