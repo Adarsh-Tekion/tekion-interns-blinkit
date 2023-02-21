@@ -74,6 +74,9 @@
     background-color: white;
     flex-direction: row;
     }
+    .category-text{
+    font-weight: bold;
+    }
     .side-bar-list p{
     font-weight: bold;
     }
@@ -88,6 +91,9 @@
     padding-right: 10px;
     flex-grow: 1;
     }
+    .title{
+    font-weight: bold;
+    }
     main{
     flex-direction: row;  
     flex-grow: 2;
@@ -95,7 +101,7 @@
     .menu{
     display: inline-block;
     width: 100%;
-    border: rgb(250, 248, 248);
+    border: 2px solid rgb(250, 248, 248);
     }
     .row-card{
     display: flex;
@@ -125,7 +131,7 @@
     }
     .product{
     border-right: 3px solid rgb(250, 248, 248);
-    border-top: 3px solid rgb(250, 248, 248);
+    border-bottom: 3px solid rgb(250, 248, 248);
     padding: 5px 10px 5px 10px;
     margin-top: 0px;
     width: 23%;
@@ -159,6 +165,11 @@
     display:flex;
     height: 30%;
     }
+    #added-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
     .product-image-container img{
     width: 50%;
     height: 80%;
@@ -167,13 +178,46 @@
     font-weight:  bold;
     font-size: 18px;
     }
+    .cart-btn{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    }
+    .subtract-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-right: 8px; */
+    background-color: rgb(224, 243, 232) !important;
+    margin: 0;
+    border-radius: 0;
+    border-color: none;
+    }
+    .add-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 8px; */
+    background-color: rgb(224, 243, 232) !important; 
+    margin: 0;
+    }
+    .count-show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 2px;
+    }
     .cart-btn-container button{
     width: 100px;
     height:40px;
     border-color: green;
     border-width: 1px;
     border-radius: 7px;
-    background-color: rgb(199, 240, 218);
+    background-color: rgb(199, 240, 218); 
     color: green;
     font-weight: bold;
     font-size: 20px;
@@ -210,6 +254,10 @@
     }
     .flex{
     display: flex;
+    }
+    .flex-column{
+    display: flex;
+    flex-direction: column;
     }
     .justify-center{
     justify-content: center;
