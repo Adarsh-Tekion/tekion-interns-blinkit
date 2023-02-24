@@ -9,8 +9,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
       <link rel ="stylesheet" href = "style.css">
-      <script type="module" src = "index.js" defer></script>
-      <link rel ="import" href = "cart.html">
+      <script type="module" src = "scripts/index.js" defer></script>
    </head>
    <body>
       <header class="flex">
@@ -25,9 +24,10 @@
          </div>
          <div class="header-login-butn flex align-center">
             <button class="login-btn">Login</button>
-            <button class="add-to-cart flex justify-center align-center" id="cart-page">
+               <button class="add-to-cart flex justify-center align-center" id="cart-page">
             <img src="images/shopping_cart.ico">
-            <strong>My Cart</strong></button> 
+            <strong>My Cart</strong>
+         </button>
          </div>
       </header>
       <nav class="nav-bar flex justify-center">
@@ -59,8 +59,6 @@
             </div>
          </div>
       </main>
-      <div id = "added-items">
-      </div>
       <footer class= "flex align-center justify-center">
          <p class="flex">© 2018 Blinkit Commerce Pvt Ltd (formerly known as Grofers India Pvt. Ltd), 2016-2023</p>
          <div class="footer-download-source flex">
