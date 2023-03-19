@@ -1,0 +1,31 @@
+
+    footer{
+    margin-top: 25px;
+    border: 2px solid rgb(250, 248, 248);
+    background-color: rgb(250, 248, 248);
+    }
+    .footer-store-img img {  
+    width: 35%;  
+    height: 50%;
+    }
+    .footer-store-img{
+    gap: 1rem;
+    width:40%;
+    margin: 0;
+    padding: 0;
+    }
+    .footer-download-source{
+    justify-content: flex-end;
+    margin: 0;
+    }
+    .download-text{
+    margin-right: 0;
+    padding-right: 0;
+    }
+    .footer-social-media {  
+    gap: 1rem;
+    }
+    .footer-social-media img { 
+    width: 5%;  
+    height: 20%;
+    }

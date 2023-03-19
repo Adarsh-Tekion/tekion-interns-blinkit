@@ -1,6 +1,6 @@
 import React from 'react'
-import '../App.css';
-import Card from "./Card.js";
+import './Card.Module.css';
+import Card from "./Card.Module.js";
 
 export default function Grid(props) {
 const rows = [];

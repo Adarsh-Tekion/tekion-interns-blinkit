@@ -1,0 +1,13 @@
+
+    .nav-bar{
+        flex-direction: row;
+        text-align: center;
+        border: 2px solid rgb(250, 248, 248);
+        }
+        .bar{
+            padding-right:20px;
+            padding-left: 20px;
+            list-style-type: none;
+            color: rgb(126, 119, 119);
+            text-decoration: none;
+            }

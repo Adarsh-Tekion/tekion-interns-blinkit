@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import '../App.css';
+import './Card.Module.css';
+import Button from '../../Img_Btn_Wrapper/Button.js';
+import Image from '../../Img_Btn_Wrapper/Image.js';
 
 export default function Card(props) {
 
@@ -17,7 +19,9 @@ export default function Card(props) {
             <div className="discount">
                 <p className="flex justify-center">10% OFF</p>
             </div>
-            <div className="product-image-container justify-center"><img src={props.name.image_url} alt={props.name.product_name} className="align-center" /></div>
+            <div className="product-image-container justify-center">
+            <Image source = {props.name.image_url} alternate = {props.name.product_name} styles = "align-center"/>
+            </div>
             <div className="source-btn">
                 <p className="source justify-center">Sourced at 5AM</p>
             </div>
@@ -36,12 +40,13 @@ export default function Card(props) {
                         {
                             count ? (
                                 <div className="cart-btn-container align-center flex cart-btn">
-                                    <button className="subtract-btn" onClick={ () => handleclick(false)}>-</button>
+                                     <Button styles= "subtract-btn" onclick = {() => handleclick(false)} children = "-"/>
                                     <p className="count-show">{count}</p>
-                                    <button className="add-btn" onClick={() => handleclick(true)}>+</button>
+                                    <Button styles= "add-btn" onclick = {() => handleclick(true)} children = "+"/>
+                                    
                                 </div>
                             ) :
-                                <button className="cart-btn-container align-center flex cart-btn" onClick={() => handleclick(true)}>ADD</button>
+                                <Button styles= "cart-btn-container align-center flex cart-btn" onclick = {() => handleclick(true)} children = "ADD"/>
                         }
                     </>
                 </div>
