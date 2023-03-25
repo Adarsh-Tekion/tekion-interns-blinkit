@@ -3,7 +3,7 @@ import './Card.Module.css';
 import Button from '../../Img_Btn_Wrapper/Button.js';
 import Image from '../../Img_Btn_Wrapper/Image.js';
 import { useSelector, useDispatch } from 'react-redux';
-import { incNumber, decNumber } from '../../../Actions/index.js';
+import { incNumber, decNumber } from '../../../actions/index.js';
 
 export default function Card(props) {
 
