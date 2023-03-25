@@ -4,7 +4,6 @@ import Card from "./Card.Module.js";
 
 export default function Grid(props) {
 const rows = [];
-
 for(let i=0;i<props.products.length;i+=4)
 {
     const row = props.products.slice(i,i+4);
