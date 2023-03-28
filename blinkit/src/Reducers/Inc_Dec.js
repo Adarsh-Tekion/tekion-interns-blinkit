@@ -8,7 +8,8 @@ for(let i=0;i<items.length;i++)
 function changeInc(state,id)
 {
     state[id]+=1;
-    return state;
+    const newarr=[...state];
+    return newarr;
 }
 function changeDec(state,id)
 {
@@ -16,15 +17,15 @@ function changeDec(state,id)
     return state;
 
     state[id]-=1;
-    return state;
+    const newarr=[...state];
+    return newarr;
 }
 const changeNumber = (state=initalState, action) =>{
     switch(action.type){
         
         case "INCREMENT" : return (items.find((item)=>item.id===action.Id)?(changeInc(state,action.Id-1)):state);
         case "DECREMENT" : return (items.find((item)=>item.id===action.Id)?(changeDec(state,action.Id-1)):state);
-        default          : return state;
-        
+        default          : return state;  
     }
 }
 export default changeNumber;
