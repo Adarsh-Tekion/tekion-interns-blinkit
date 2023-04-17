@@ -1,0 +1,28 @@
+.bill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 600px;
+}
+.cart-items>thead,tbody{
+    background-color: rgb(151, 235, 190);
+    min-width:500px;
+    font-style: italic;
+    border: 1px solid black;
+}
+.item-name{
+    padding:5px;
+    text-align: left;
+    min-width: 300px;
+}
+.item-qty{
+    padding: 5px;
+    text-align: center
+}
+.empty-cart{
+    min-height: 600px;
+    font-style: italic;
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+}

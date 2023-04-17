@@ -1,0 +1,13 @@
+.source-btn{
+    display:flex;
+    justify-content: flex-end;
+    }
+    .source{
+    width:45%;
+    border-radius: 5px 5px 5px 5px;
+    border: 2px, solid rgb(250, 248, 248);
+    background-color: rgb(199, 240, 218);
+    color: green;
+    display:flex;
+    align-self: right;
+    }

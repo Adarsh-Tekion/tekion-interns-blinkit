@@ -1,0 +1,28 @@
+.side-bar{
+    margin-top: 0;
+    }
+.side-bar-list{
+        list-style-type: none;
+        width: 250px;
+        height: 70px;
+        border: 3px solid rgb(250, 248, 248);
+        box-shadow: 5px 5px, 5px, 5px;
+        justify-content: left;
+        background-color: white;
+        flex-direction: row;
+    }
+    .side-bar-list:hover{
+        background-color: rgb(199, 240, 218);
+        border-left: 3px solid green;
+        cursor: pointer;
+    }
+.side-bar-list p{
+        font-weight: bold;
+        }
+.food-image{
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    }
+      

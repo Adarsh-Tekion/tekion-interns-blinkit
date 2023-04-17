@@ -1,0 +1,15 @@
+header{
+        justify-content: space-between;
+        align-items: stretch;
+        border-bottom:3px solid rgb(250, 248, 248)
+        }
+        .header-logo{
+        gap: 30px;
+        }
+
+            .logo{
+            border-right: 3px solid rgb(250, 248, 248);
+            padding-right: 10px;
+            }
+
+            

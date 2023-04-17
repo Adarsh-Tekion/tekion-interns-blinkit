@@ -1,0 +1,17 @@
+.product-desc{
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 3px solid rgb(250, 248, 248);
+    }
+    .sort{
+    flex-direction: row;
+    gap: 10px;
+    }
+    .title{
+        font-weight: bold;
+    }
+    #sort-by-filter{
+    width: 120px;
+    height: 20px;
+    }

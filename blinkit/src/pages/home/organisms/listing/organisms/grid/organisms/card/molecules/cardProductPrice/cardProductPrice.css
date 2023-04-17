@@ -1,0 +1,15 @@
+.cut-price{
+    color: rgb(192, 185, 185);
+    margin-top:0;
+        text-decoration: line-through;
+    }
+    .final-price{
+    font-size: 22px;
+    margin-left: 0;
+    font-weight: bold;
+    margin-bottom:0;
+    }
+    .price{
+        flex-direction: column;
+        justify-content: space-between;
+        }

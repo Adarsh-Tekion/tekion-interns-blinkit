@@ -1,0 +1,11 @@
+.discount{
+    display:flex;
+    justify-content: flex-start;
+    }
+    .discount p{
+        width:30%;
+        border: 2px solid rgb(250, 248, 248);
+        border-radius: 5px 5px 5px 5px;
+        background-color: rgb(41, 135, 212);
+        color: white;
+        }

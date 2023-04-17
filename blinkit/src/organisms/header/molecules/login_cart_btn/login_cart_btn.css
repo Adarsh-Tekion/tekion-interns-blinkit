@@ -1,0 +1,23 @@
+.header-login-btn{
+    padding-right: 10px;
+    float: right;
+    }
+    .add-to-cart{
+        height:50px;
+        width: 100px;
+        border: none;
+        background-color: rgb(9, 118, 31);
+        color:white;
+        border-radius: 10px;
+        float:right;
+        gap: 5px;
+        }
+        .login-btn{
+        height:50px;
+        width:100px;
+        border: 2px solid rgb(250, 248, 248);
+        border-radius: 10px;
+        background-color: rgb(250, 248, 248);
+        float:right;
+        }
+    
